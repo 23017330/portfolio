@@ -65,7 +65,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "akashjana663@gmail.com";
+    const text = "Ricardom23017330@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -127,7 +127,7 @@ export const BentoGridItem = ({
             )}
           >
             {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
               {description}
             </div>
 
@@ -152,16 +152,16 @@ export const BentoGridItem = ({
                 />
                 <div className="flex gap-4">
                   <a
-                    href="https://drive.google.com/file/d/1udileHqcrbD09gjuFpUZlHgpOajw3UU_/view?usp=sharing"
+                    href="https://github.com/23017330"
                     target="_blank"
                   >
                     <div className="z-10">
-                      <LitupButton name="View Resume" />
+                      <LitupButton name="GitHub 主页" />
                     </div>
                   </a>
-                  <a href="https://contra.com/akash_jana" target="_blank">
+                  <a href="https://github.com/23017330" target="_blank">
                     <div className="z-10">
-                      <LitupButton name="Freelance" />
+                      <LitupButton name="通过 GitHub 联系" />
                     </div>
                   </a>
                 </div>
@@ -178,7 +178,7 @@ export const BentoGridItem = ({
                 </div>
 
                 <MagicButton
-                  title={copied ? "Email is Copied!" : "Copy my email address"}
+                  title={copied ? "邮箱地址已复制！" : "复制我的邮箱地址"}
                   icon={<IoCopyOutline />}
                   position="left"
                   handleClick={handleCopy}

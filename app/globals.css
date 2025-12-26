@@ -96,6 +96,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    color: #ffffff;
+    font-family: "STXingkai", "STKaiti", "Kaiti SC", "KaiTi", "FZKai-Z03", "FZKai-Z03S", "FangSong", "STSong", "SimSun", "SimSun-ExtB", "Songti SC", "Microsoft YaHei", serif;
   }
   button {
     @apply active:outline-none;

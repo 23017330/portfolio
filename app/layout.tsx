@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Akash's Portfolio",
-  description: "Minimal Modern Porfolio website",
+  title: "马子琛的作品集",
+  description: "南京航空航天大学信息管理与信息系统专业学生的个人作品集",
 };
 
 export default function RootLayout({
@@ -16,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

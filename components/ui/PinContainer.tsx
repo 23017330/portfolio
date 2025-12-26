@@ -39,7 +39,9 @@ export const PinContainer = ({
       //href={href || "/"}
       onClick={(event) => {
         event.preventDefault();
-        window.open("https://" + href, "_blank");
+        const targetHref =
+          href && href.startsWith("http") ? href : `https://${href}`;
+        window.open(targetHref, "_blank");
       }}
     >
       <div

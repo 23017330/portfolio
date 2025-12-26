@@ -7,13 +7,17 @@ const Experience = () => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
-        My work<span className="text-purple"> experience</span>
+        我的课程<span className="text-purple">内容</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
+            as="a"
+            href={card.link}
+            target="_blank"
+            rel="noreferrer"
             //   random duration will be fun , I think , may be not
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
@@ -27,7 +31,7 @@ const Experience = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-white border-neutral-200 dark:border-slate-800"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
@@ -39,7 +43,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-white mt-3 font-semibold">
                   {card.desc}
                 </p>
               </div>

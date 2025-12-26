@@ -9,8 +9,7 @@ const RecentProjects = () => {
   return (
     <div className="py-10" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        部分近期<span className="text-purple">项目展示</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-20 gap-y-2">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -36,7 +35,7 @@ const RecentProjects = () => {
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
-                  color: "#BEC1DD",
+                  color: "#FFFFFF",
                   margin: "1vh 0",
                 }}
               >
@@ -59,7 +58,7 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm ">Live</p>
+                  <p className="flex lg:text-xl md:text-xs text-sm ">在线</p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>

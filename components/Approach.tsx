@@ -8,17 +8,15 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        我的 <span className="text-purple">工作方法</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="规划与策略"
+          icon={<AceternityIcon order="阶段 1" />}
+          des="我们一起梳理网站目标、目标受众与核心功能，讨论信息架构、导航和内容需求。"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -27,11 +25,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="开发与进度同步"
+          icon={<AceternityIcon order="阶段 2" />}
+          des="确认方案后，我会放上 lofi 开始编码，从草图到代码的每一步都会同步给你。"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -49,11 +45,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title="开发与上线"
+          icon={<AceternityIcon order="阶段 3" />}
+          des="魔法就在这里发生！基于确认的设计，我会将其转化为可运行的功能代码，从零构建并准备上线。"
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -97,10 +91,10 @@ const Card = ({
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
-      <Icon className="absolute h-10 w-10 -top-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -top-3 -right-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 dark:text-white text-black opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -right-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 text-white opacity-30" />
 
       <AnimatePresence>
         {hovered && (
@@ -125,8 +119,8 @@ const Card = ({
         </div>
         <h2
           // change text-3xl, add text-center
-          className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white 
+          className="text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4  font-bold group-hover/canvas-card:text-white 
          group-hover/canvas-card:-translate-y-2 transition duration-200"
         >
           {title}
@@ -136,7 +130,7 @@ const Card = ({
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
          group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "#E4ECFF" }}
+          style={{ color: "#FFFFFF" }}
         >
           {des}
         </p>
