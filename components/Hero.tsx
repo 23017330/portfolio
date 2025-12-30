@@ -7,11 +7,11 @@ import { TypewriterEffect } from "./ui/TypewriterEffect";
 
 const Hero = () => {
   const words = [
-    { text: "我", className: "text-purple dark:text-purple" },
     { text: "打造", className: "text-purple dark:text-purple" },
     { text: "高性能", className: "text-purple dark:text-purple" },
-    { text: "网页", className: "text-purple dark:text-purple" },
-    { text: "应用", className: "text-purple dark:text-purple" },
+    { text: "三维", className: "text-purple dark:text-purple" },
+    { text: "互动", className: "text-purple dark:text-purple" },
+    { text: "体验", className: "text-purple dark:text-purple" },
   ];
 
   return (
@@ -55,7 +55,7 @@ const Hero = () => {
           />
 
           <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-white">
-            马子琛
+            马子琛 · 南航 IMIS
           </h2>
 
           <TypewriterEffect
@@ -64,21 +64,53 @@ const Hero = () => {
           />
 
           <p className="mb-4 text-center text-sm text-white md:text-lg md:tracking-wider lg:text-2xl">
-            你好，我是马子琛，一名南京航空航天大学信息管理与信息系统专业的学生。
+            你好，我是马子琛，南京航空航天大学信息管理与信息系统专业在读生。
+            擅长用 Next.js、Three.js 与动效设计，做出有温度的数字体验。
           </p>
 
-          <a
-            href="https://github.com/23017330"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer"
-          >
-            <MagicButton
-              title="通过 GitHub 联系我"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row md:flex-wrap gap-3 w-full justify-center">
+            <a
+              href="https://github.com/23017330"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <MagicButton
+                title="GitHub · 开源作品"
+                icon={<FaLocationArrow />}
+                position="right"
+                containerClassName="w-full md:w-56"
+              />
+            </a>
+            <a
+              href="https://www.nuaa.edu.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <MagicButton
+                title="南航官网"
+                icon={<FaLocationArrow />}
+                position="right"
+                containerClassName="w-full md:w-44"
+                otherClasses="!bg-[#0e1427]"
+              />
+            </a>
+            <a
+              href="为https://aao-eas.nuaa.edu.cn/eams/login.action"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <MagicButton
+                title="教务网入口"
+                icon={<FaLocationArrow />}
+                position="right"
+                containerClassName="w-full md:w-44"
+                otherClasses="!bg-[#0e1427]"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

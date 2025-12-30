@@ -22,7 +22,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          准备好让<span className="text-purple">你的</span>数字形象更进一步了吗？
+          准备好让<span className="text-purple">你的</span>网站焕然一新吗？
         </h1>
         <p className="text-white md:mt-10 my-5 text-center">
           欢迎随时联系我，一起讨论我能如何帮助你实现目标。
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light text-white">
-          版权所有 © 2026 枕边幽灵
+          © 2026 马子琛 · 南京航空航天大学
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

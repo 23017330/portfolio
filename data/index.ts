@@ -1,8 +1,7 @@
 export const navItems = [
   { name: "关于", link: "#about" },
-  // { name: "Resume", link: "https://drive.google.com/file/d/1udileHqcrbD09gjuFpUZlHgpOajw3UU_/view?usp=sharing" },
+  { name: "校园服务", link: "#campus" },
   { name: "项目", link: "#projects" },
-  //{ name: "Testimonials", link: "#testimonials" },
   { name: "GitHub", link: "https://github.com/23017330" },
   { name: "联系", link: "#contact" },
 ];
@@ -10,8 +9,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "我重视与团队和客户的协作，保持开放沟通。",
-    description: "",
+    title: "以用户体验为核心的全栈开发，保持高频沟通迭代。",
+    description: "用数据和动效讲故事，让页面既好看又好用。",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -20,8 +19,8 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "我可以灵活适应任何时区的沟通节奏。",
-    description: "",
+    title: "灵活协作 · 快速响应",
+    description: "可适应跨时区沟通，保持需求、进度透明。",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[40vh] select-none",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -30,8 +29,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "联系我",
-    description: "想合作吗？不妨先看看我的作品与经历。",
+    title: "一起探索新想法",
+    description: "欢迎合作或内推机会，作品和经历随时可聊。",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 flex",
     imgClassName: "",
     titleClassName: "justify-end",
@@ -104,6 +103,14 @@ export const projects = [
     img: "/p1.png",
     iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/mongo.svg"],
     link: "https://github.com/23017330",
+  },
+  {
+    id: 5,
+    title: "RollChecker - 未接龙人员检查",
+    des: "快速筛查未完成接龙/问卷的同学，支持名单输入与结果导出，方便课堂或活动管理。",
+    img: "/p2.png",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://rollcheaker-gho.onrender.com/",
   },
 ];
 
