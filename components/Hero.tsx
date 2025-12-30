@@ -97,7 +97,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="为https://aao-eas.nuaa.edu.cn/eams/login.action"
+              href="https://aao-eas.nuaa.edu.cn"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer"
