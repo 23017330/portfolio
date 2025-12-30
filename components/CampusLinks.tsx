@@ -11,9 +11,9 @@ const campusLinks = [
   },
   {
     title: "教务网",
-    href: "https://jw.nuaa.edu.cn/",
+    href: "https://aao-eas.nuaa.edu.cn/",
     desc: "选课、成绩、培养计划与教学通知一站办理。",
-    tag: "jw.nuaa.edu.cn",
+    tag: "https://aao-eas.nuaa.edu.cn/",
   },
 ];
 
